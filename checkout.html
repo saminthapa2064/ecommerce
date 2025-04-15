@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+  integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="cash.css">
+</head>
+<body>
+  <header>
+    <h1>Easy cart</h1>
+    <nav>
+      <ul>
+        <div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="cart.html">Cart</a> (<span id="cart-count">0</span>)</li>
+          <li><a href="index.html">Checkout</a></li>
+        </div>
+        <div class="ml-auto">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sign up.html">Sign Up</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+  <h1>
+    Checkout
+  </h1>
+  <div class="flex ai-start">
+    <div class="box">
+      <div>
+        <form action="#">
+          <div id="coupon">Have a coupon? <a href="#">Click here to enter your code </a></div>
+        </form>
+        <br>
+        <div class="solid">
+        <p>
+          If you have a coupon code, please apply it below
+        </p>
+         <br>
+        <form action="#">
+          <input id="liquid" type="sent" placeholder="Coupon code">
+          <input id="gas" type="received" placeholder="Apply Coupon">
+        </form>
+      </div>
+      </div>
+      <div class="owl">      
+        <p>
+        Billing details
+      </p>
+    </div>
+      <div class="bat">
+        <form action="#">  
+          <input type="Name" placeholder="First Name ">
+          <input type="Name" placeholder="Last Name">
+        </form>   
+      </div>
+      <br>
+      <br>
+      <div class="mat">
+        <form action="#">
+          <input type="Name" placeholder="Company name (optional)">
+        </form>   
+      </div>
+      <br>
+      <br>
+      <div class="court">
+        <h2>
+          Country/Region
+        </h2>
+        <br>
+        <!-- <form action="#">
+          <input type="transferred" placeholder="United Kingdom (UK)">
+        </form> -->
+        <select name="" id="normalize">
+          <option value="Argentina">Argentina</option>
+          <option value="Bangledesh">Bangledesh</option>
+          <option value="Canada">Canada</option>
+          <option value="Nepal">Nepal</option>
+          <option value="India">India</option>
+          <option value="United State of America">United State of America</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="United Kingdom (Uk)">United Kingdom (UK)</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <div class="road">
+        <form action="#">
+          <input type="name" placeholder="Stree name and house number">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="built">
+        <form action="#">
+          <input type="option" placeholder="Apartment, suite, unit, etc. (optional)">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="village">
+        <form action="#">
+          <input type="building" placeholder="Town/City">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="plane">
+        <form action="#">
+          <input type="flight" placeholder="Country (optional)">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="street">
+        <form action="#">
+          <input type="Code" placeholder="Postcode">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="mobile">
+        <form action="#">
+          <input type="number" placeholder="phone">
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="note">
+        <form action="#">
+          <input type="email" placeholder="Email Address">
+        </form>
+      </div>
+      <div class="special">
+        <h2>
+          Additional information
+        </h2>
+        <br>
+        <p>
+          Order notes (optional)
+        </p>
+        <br>
+        <form action="#">
+          <input type="eg" placeholder="Notes about your order, e.g. special notes for delivery.">
+        </form>
+      </div>
+    </div>
+    <!-- <br> -->
+    <div class="container">
+      <table id="checkout-table">
+        <p id="fan">
+          Your order
+        </p>
+        <tr>
+          <th>
+            Product
+          </th>
+          <th>Subtotal  </th>
+        </tr>
+        <br>
+        <tr>
+          <td>
+            Scubapro 10 litre 232 bar cylinder 
+            – single valve  × 1
+          </td>
+          <td>
+            Rs50000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Subtotal
+          </td>
+          <td>
+            Rs50000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Total
+          </td>
+          <td>
+            Rs50000
+          </td>
+        </tr>
+      </table>
+      <!-- <button id="submit"> -->
+        <input id="submit" type="PLace Order" placeholder="Place Order">
+      <!-- </button> -->
+    </div>
+  </div>
+</div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js">
+    
+  </script>
+  <script>
+    $('#normalize').selectize();
+
+    $("#coupon a").click(function(){
+      $(".solid").slideToggle();
+    })
+  </script>
+  <br>
+  <br>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Easy cart</p>
+  </footer>
+</body>
+</html>
